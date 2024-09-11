@@ -1,0 +1,1 @@
+depth = oJoueur.depth + 20

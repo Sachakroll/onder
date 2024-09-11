@@ -1,0 +1,1 @@
+image_index = global.etat.p18_hamacTrouE * 2

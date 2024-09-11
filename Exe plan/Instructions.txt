@@ -1,0 +1,8 @@
+Merci d'avoir téléchargé le jeu vidéo "Onder" par Sacha Febvay.
+
+Pour y jouer, éxécutez le fichier nommé : "Onder.exe" présent dans le même dossier que les fichier que vous êtes en train de lire. 
+Si vous voulez pouvoir y accéder depuis votre bureau, faites un clic droit sur le fichier "Onder.exe" et sélectionnez "Envoyer vers" puis la première option : "Bureau (créer un raccourci").
+
+Le dossier "Soundtrack" contient l'ensemble des musiques utilisées dans Onder.
+
+- Sacha Febvay

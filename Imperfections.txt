@@ -1,0 +1,46 @@
+Onder - Imperfections à régler avant la sortie de la démo :
+
+- Plaine12
+- Pêche au canards
+- Entrées manquantes :
+	- Stand de pêche aux canards
+	- 2 fenêtres de l'auberge
+- Bug du plein écran
+- Fin demo
+- Musiques
+
+
+
+Contenu de la démo : Du début au combat d'Ocheon (non-inclus). (25-35min)
+
+
+
+Onder - Liste des problèmes ou imperfections à régler :
+
+- Tapis de Nephor
+- Animations quand on marche dans l'eau
+- Animation de la 2ème chute d'eau au début du jeu
+- Apparence des montagnes (P1 et P2)
+(En gros refaire l'esthétique de P1 et P2 (sauf les animations déjà faites pour l'eau))
+- Menu, sauvegarde
+- Dialogue du guide touristique
+
+
+
+Onder - Liste des tâches :
+
+- Combat contre Ocheon
+- Cabane après combat
+- Village
+
+
+
+Temps : 15:00 (jusqu'à la fin de p15)
+
+Speedrun : 5:47 (jusqu'à la fin de p15)
+	   5:44 (jusqu'à la fin de p15)
+	   6:55 (jusqu'à la fin de p21)
+	   6:33 (jusqu'à la fin de p21)
+	   6:23 (jusqu'à la fin de p21)
+
+Speedrun death% : 1:34

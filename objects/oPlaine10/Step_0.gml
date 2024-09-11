@@ -1,0 +1,1 @@
+global.etat.musique = mForet

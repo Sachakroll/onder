@@ -1,0 +1,1 @@
+depth = oGuideTouristique_foret_stand.depth + 2

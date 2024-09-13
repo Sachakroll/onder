@@ -7,7 +7,7 @@ if oJoueur.y >= y
 	depth = oJoueur.depth + 10
 }
 
-if oMoniteurDialogue.personnage == oBucheron && oMoniteurDialogue.actif
+if oMoniteurDialogue.personnage == oEdwar_le_forrain && oMoniteurDialogue.actif
 {
 	if oMoniteurDialogue.bouche == 1
 	{

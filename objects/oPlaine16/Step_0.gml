@@ -96,3 +96,28 @@ if Interaction(oStand_Peche)
 	Dialog("[Entrée manquante]")
 }
 
+if Interaction(oEdwar_le_forrain) && global.etat.p16_edwarInteraction = 0
+{
+	global.etat.p16_edwarInteraction = 1
+	global.etat.pieces += 12
+	DialogDef(6, 0, oEdwar_le_forrain)
+	Dialog("Bonjour, voyageur. \nBienvenue à la pêche aux canards.")
+	Dialog("Ou plutôt la future pêche aux canards...")
+	Dialog("Oui, malheureusement, je n'ai pas encore reçu \nles cannes à pêche, donc vous ne pouvez pas \nencore y jouer...")
+	Dialog("Pardon ? Comment ça, le créateur du jeu vous a \ndit que je devais vous donner douze pièces pour \nque vous obteniez quand même une récompense ?")
+	Dialog("Je ne comprends pas du tout ce que vous voulez \ndire...")
+	Dialog("Mais bon... Tenez.")
+	DialogDef(6,0,0)
+	Dialog("Vous obtenez 12 pièces.")
+}
+if Interaction(oEdwar_le_forrain) && global.etat.p16_edwarInteraction = 1
+{
+	global.etat.p16_edwarInteraction = 2
+	DialogDef(6, 0, oEdwar_le_forrain)
+	Dialog("Je n'ai pas du tout compris ce qui vient de se \npasser...")
+}
+if Interaction(oEdwar_le_forrain) && global.etat.p16_edwarInteraction = 2
+{
+	DialogDef(6, 0, oEdwar_le_forrain)
+	Dialog("Bonjour...")
+}

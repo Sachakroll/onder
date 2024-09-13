@@ -41,6 +41,7 @@ global.etat.p13_objPris = 0
 global.etat.p14_cinema1 = 0
 global.etat.p15_cinema1 = 0
 global.etat.p16_cinema1 = 0
+global.etat.p16_edwarInteraction = 0
 global.etat.p17_cinema1 = 0
 global.etat.p18_dragobertParlE = 0
 global.etat.p18_hamacTrouE = 0

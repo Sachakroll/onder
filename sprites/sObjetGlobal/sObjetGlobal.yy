@@ -25,14 +25,14 @@
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"Non utilisés",
-    "path":"folders/Sprites/Non utilisés.yy",
+    "name":"Général",
+    "path":"folders/Sprites/Général.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
   "resourceVersion":"2.0",
   "sequence":{
-    "$GMSequence":"",
+    "$GMSequence":"v1",
     "%Name":"sObjetGlobal",
     "autoRecord":true,
     "backdropHeight":768,

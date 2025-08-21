@@ -24,7 +24,7 @@ if global.cinema = true && global.etat.p5_cinema1 = 1 && global.cinemaTimer = 84
 	Dialog("Oh !")
 	global.cinemaTimer = 0
 	global.etat.p5_cinema1 = 3
-	global.etat.musique = mForet
+	global.etat.musique = mNephor_ext
 }
 
 if global.cinema = true && global.etat.p5_cinema1 = 3

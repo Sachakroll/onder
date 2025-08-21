@@ -1,8 +1,10 @@
 //Initialisation de l'état du jeu
 
-global.debugmode = 1
+global.debugmode = false
 global.skipDialog = 0
 global.debugmode_vision = 0
+global.nephor_music_change = 0
+global.nephor_music_time = 0
 
 global.etatPersistant = {}
 
@@ -14,7 +16,7 @@ global.etatSave = {}
 
 global.etat.musique = -1
 musiqueAncien = -1
-global.volume = 0
+global.volume = 1
 
 global.etat.playtime = -1
 
@@ -43,6 +45,7 @@ global.etat.p15_cinema1 = 0
 global.etat.p16_cinema1 = 0
 global.etat.p16_edwarInteraction = 0
 global.etat.p17_cinema1 = 0
+global.etat.p18_tournibouParlE = 0
 global.etat.p18_dragobertParlE = 0
 global.etat.p18_hamacTrouE = 0
 global.etat.p18_lastHamac = 0
@@ -53,6 +56,7 @@ global.etat.p20_ocheonParle = 0
 global.etat.p20_labyrintheReussi = 0
 global.etat.ocheonCombatCommencE = 0
 global.etat.levierOcheonActif = 0
+global.etat.p22_cinema1 = 0
 
 function Music_stop(temps)
 {

@@ -70,7 +70,7 @@ if (global.etat.p16_cinema1 = 1.1 || global.etat.p16_cinema1 = 2.1) && oMoniteur
 		DialogDef(6,0,0)
 		Dialog("Vous donnez le morceau de déguisement en \ncarton au castor.")
 		DialogDef(6,0,oOcheonCastor)
-		Dialog("Merci beaucoup !   \nTiens, pour te remercier !")
+		Dialog("Merci beaucoup !   \nTiens, pour te remercier !  \nC'est des bidules que j'ai trouvés par terre, \nje sais pas à quoi ça sert.")
 		DialogDef(6,0,0)
 		Dialog("Vous obtenez 18 pièces.")
 		global.etat.pieces += 18
@@ -93,22 +93,34 @@ if Interaction(oDeclencheurZone) && global.etat.p16_cinema1 = 3
 if Interaction(oStand_Peche)
 {
 	DialogDef(6, 0, 0)
-	Dialog("[Entrée manquante]")
+	Dialog("Les canards en plastique avancent, déterminés.          "
+	+"\n"+ "Ils nagent sans se fatiguer vers leur destinée.")
+	Dialog("Mais jamais ils n'arriveront à destination          "
+	+"\n"+ "Car depuis maintenant des jours, "
+	+"\n"+ "ils tournent en rond.")
 }
 
 if Interaction(oEdwar_le_forrain) && global.etat.p16_edwarInteraction = 0
 {
-	global.etat.p16_edwarInteraction = 1
-	global.etat.pieces += 12
 	DialogDef(6, 0, oEdwar_le_forrain)
 	Dialog("Bonjour, voyageur. \nBienvenue à la pêche aux canards.")
 	Dialog("Ou plutôt la future pêche aux canards...")
 	Dialog("Oui, malheureusement, je n'ai pas encore reçu \nles cannes à pêche, donc vous ne pouvez pas \nencore y jouer...")
-	Dialog("Pardon ? Comment ça, le créateur du jeu vous a \ndit que je devais vous donner douze pièces pour \nque vous obteniez quand même une récompense ?")
-	Dialog("Je ne comprends pas du tout ce que vous voulez \ndire...")
-	Dialog("Mais bon... Tenez.")
-	DialogDef(6,0,0)
-	Dialog("Vous obtenez 12 pièces.")
+	if global.etat.pieces >= 12
+	{
+		Dialog("Désolé...")
+		global.etat.p16_edwarInteraction = 2
+	}
+	else
+	{
+		Dialog("Pardon ? Comment ça, le créateur du jeu vous a \ndit que je devais vous donner douze pièces pour \nque vous obteniez quand même une récompense ?")
+		Dialog("Je ne comprends pas du tout ce que vous voulez \ndire...")
+		Dialog("Mais bon... Tenez.")
+		DialogDef(6,0,0)
+		Dialog("Vous obtenez 12 pièces.")
+		global.etat.p16_edwarInteraction = 1
+		global.etat.pieces += 12
+	}
 }
 if Interaction(oEdwar_le_forrain) && global.etat.p16_edwarInteraction = 1
 {

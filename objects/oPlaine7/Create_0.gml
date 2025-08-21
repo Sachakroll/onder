@@ -27,5 +27,3 @@ if global.etat.p6_cinema1 > 22
 	oConeParle.visible = true
 }
 
-global.etat.musique = mForet
-

@@ -7,7 +7,7 @@
   },
   "bitDepth":1,
   "bitRate":128,
-  "compression":0,
+  "compression":1,
   "conversionMode":0,
   "duration":81.230774,
   "name":"mPiouCombat",
@@ -20,6 +20,6 @@
   "resourceVersion":"2.0",
   "sampleRate":44100,
   "soundFile":"mPiouCombat.wav",
-  "type":0,
+  "type":1,
   "volume":1.0,
 }

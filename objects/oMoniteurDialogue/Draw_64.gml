@@ -1,7 +1,7 @@
 if actif == true
 {
 	// Affichage du cadre
-	if room = Mort
+	if room = Mort || room = Fin_demo
 	{
 		draw_sprite(sCadreDialogueMort, 0, window_get_width() / 2, window_get_height() - decalageCadreY);
 	}else

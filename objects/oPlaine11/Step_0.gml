@@ -77,7 +77,7 @@ if global.etat.p11_cinema1 = 4
 		Dialog("Soit ! Je m'appelle Ocheon et je suis là \npour t'arrêter !")
 		DialogDef(6, sOcheonTeteDetermine, oOcheon)
 		Dialog("Prépare toi à affronter mes plans les \nplus rusés !")
-		Dialog("Tu n'as aucune idée du génie des\n machinations auxquelles tu auras à \nfaire !")
+		Dialog("Tu n'as aucune idée du génie des\nmachinations auxquelles tu auras à \nfaire !")
 		DialogDef(6, sOcheonTete, oOcheon)
 		Dialog("Alors !")
 		DialogDef(6, sOcheonTeteHm, oOcheon)

@@ -1,11 +1,4 @@
-if oJoueur.y < y
-{
-	depth = oJoueur.depth - 20
-}
-if oJoueur.y >= y
-{
-	depth = oJoueur.depth + 20
-}
+depth = oGuideTouristique_foret_stand.depth + 10
 
 if oMoniteurDialogue.personnage == oGuideTouristique_foret && oMoniteurDialogue.actif
 {

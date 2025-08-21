@@ -74,15 +74,15 @@ if global.debugmode
 	}
 	if keyboard_check(vk_f1) && keyboard_check_pressed(ord("G"))
 	{
-		GotoRoomDuration(Plaine17demo, 100, 280, 1)
-	}
-	if keyboard_check(vk_f1) && keyboard_check_pressed(ord("X"))
-	{
 		GotoRoomDuration(Plaine17, 100, 280, 1)
 	}
 	if keyboard_check(vk_f1) && keyboard_check_pressed(ord("L"))
 	{
 		GotoRoomDuration(Plaine18, 614, 390, 1)
+	}
+	if keyboard_check(vk_f1) && keyboard_check_pressed(ord("F"))
+	{
+		GotoRoomDuration(Plaine21, 234, 386, 1)
 	}
 	if keyboard_check(vk_f1) && keyboard_check_pressed(ord("V"))
 	{

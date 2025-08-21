@@ -340,7 +340,6 @@ if global.etat.p6_cinema1 = 18
 		Dialog("Le roi a mis en place une nouvelle loi \ndepuis peu.")
 		Dialog("Toute personne originaire d'un autre \nroyaume qui arrive dans le nôtre doit \nse rendre au château.")
 		Dialog("Je trouve quand même ça bizarre, \nune loi comme ça alors qu'on ne sait \nmême pas s'il existe vraiment d'autres \nroyaumes...")
-		Dialog("En plus, je n'ai aucune idée d'à quoi \nelle sert...")
 		DialogDef(3, sNephorTeteHm2, oNephor)
 		Dialog("...")
 		Dialog("Hmm...")

@@ -55,7 +55,7 @@
   "resourceType":"GMSprite",
   "resourceVersion":"2.0",
   "sequence":{
-    "$GMSequence":"",
+    "$GMSequence":"v1",
     "%Name":"sPlaine_mj1_cadre_disparition",
     "autoRecord":true,
     "backdropHeight":768,

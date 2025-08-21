@@ -1,3 +1,5 @@
+global.etat.musique = mTitle
+
 timerMenu++
 
 if timerMenu < 100 && (keyboard_check_pressed(vk_enter) || keyboard_check_pressed(ord("Z")))
@@ -25,6 +27,7 @@ if timerMenu >= 100 && timerCommencer = 0
 		{
 			timerCommencer = 1
 			Fade(60)
+			Music_stop(1000)
 		}
 	}
 	if choixMenu == 2

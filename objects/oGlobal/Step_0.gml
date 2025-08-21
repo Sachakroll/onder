@@ -13,17 +13,23 @@ if global.etat.pv < 0
 
 if global.etat.musique = -1 && musiqueAncien != -1
 {
+	global.nephor_music_change = 0
 	audio_stop_sound(musiqueAncien)
 }
 if musiqueAncien = -1 && global.etat.musique != -1
 {
-	audio_play_sound(global.etat.musique, 100, 999999999)
+	global.nephor_music_change = 0
+	audio_play_sound(global.etat.musique, 100, true)
 	audio_sound_gain(global.etat.musique, global.volume, 0)
 }
 if musiqueAncien != -1 && global.etat.musique != -1 && global.etat.musique != musiqueAncien
 {
 	audio_stop_sound(musiqueAncien)
-	audio_play_sound(global.etat.musique, 100, 999999999)
+	
+	global.nephor_music_change = 0
+	if global.etat.musique = mNephor_int || global.etat.musique = mNephor_ext
+	{audio_play_sound(global.etat.musique, 100, true, 1, global.nephor_music_time/60)}
+	else {audio_play_sound(global.etat.musique, 100, true)}
 	audio_sound_gain(global.etat.musique, global.volume, 0)
 }
 
@@ -40,4 +46,10 @@ if music_set_timer != -1
 	music_set_timer++
 }
 
-show_debug_message(global.etat.musique)
+// Musique de Nephor
+
+if global.etat.musique = mNephor_ext || global.etat.musique = mNephor_int {global.nephor_music_time ++}
+if global.nephor_music_time = 5123 {global.nephor_music_time = 0}
+
+if global.nephor_music_change = 1 {global.etat.musique = mNephor_int}
+if global.nephor_music_change = 2 {global.etat.musique = mNephor_ext}

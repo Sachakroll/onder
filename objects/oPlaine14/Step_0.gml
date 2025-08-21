@@ -50,6 +50,12 @@ global.cinemaTimer++
 
 // Évènements
 
+if Interaction(oDeclencheurZone)
+{
+	DialogDef(6, 0, 0)
+	Dialog("Ce sont juste des cailloux. \nPourquoi vous regardez ça ?")
+}
+
 if Interaction(oOurs)
 {
 	global.etat.p14_cinema1 = 0.5

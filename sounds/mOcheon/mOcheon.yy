@@ -7,9 +7,9 @@
   },
   "bitDepth":1,
   "bitRate":128,
-  "compression":0,
+  "compression":1,
   "conversionMode":0,
-  "duration":40.96,
+  "duration":29.538458,
   "name":"mOcheon",
   "parent":{
     "name":"Sons",
@@ -20,6 +20,6 @@
   "resourceVersion":"2.0",
   "sampleRate":44100,
   "soundFile":"mOcheon.wav",
-  "type":0,
+  "type":1,
   "volume":1.0,
 }

@@ -14,3 +14,5 @@ if global.etat.p18_dialogOcheon = 3
 {
 	oOcheonHamac.visible = false
 }
+
+fenetre_haut_dlg = 0

@@ -16,6 +16,8 @@ else
 	sprite_index = sAubergeInt
 }
 
+if Interaction(oDeclencheurZone) {global.etat.p18_tournibouParlE = 1}
+
 if Interaction(oDeclencheurZone) && global.etat.p19_cinema1 = 0
 {
 	global.etat.p19_cinema1 = 2

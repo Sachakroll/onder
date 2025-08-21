@@ -6,6 +6,7 @@ if oJoueur.y >= y
 {
 	depth = oJoueur.depth + 20
 }
+if room = Plaine17 {depth = oGuideTouristique_foret_stand.depth + 10}
 
 if oMoniteurDialogue.personnage == oOcheon && oMoniteurDialogue.actif
 {

@@ -14,7 +14,6 @@ if tempsTimer = 60
 {
 	tempsTimer = 0
 	global.etatPersistant.temps ++
-	show_debug_message(global.etatPersistant.temps)
 }
 
 if oMoniteurDialogue.actif == false && !global.cinema
@@ -239,6 +238,7 @@ if oMoniteurDialogue.actif == false && !global.cinema
 		if place_meeting(x, y, oDeclencheur2)
 		{
 			GotoRoom(Plaine6, 99, 136)
+			global.nephor_music_change = 1
 		}
 		if place_meeting(x, y, oPorte2)
 		{
@@ -251,6 +251,7 @@ if oMoniteurDialogue.actif == false && !global.cinema
 		if global.etat.p6_cinema1 != 23 && place_meeting(x, y, oPorte1)
 		{
 			GotoRoom(Plaine5, 248, 378)
+			global.nephor_music_change = 2
 		}
 		if global.etat.p6_cinema1 = 23 && oJoueur.collision(oPorte1)
 		{
@@ -262,6 +263,7 @@ if oMoniteurDialogue.actif == false && !global.cinema
 		{
 			global.etat.p6_cinema1 = 24
 			GotoRoom(Plaine5, 248, 378)
+			global.nephor_music_change = 2
 		}
 	}
 	
@@ -289,18 +291,6 @@ if oMoniteurDialogue.actif == false && !global.cinema
 		}
 		if place_meeting(x, y, oPorte2)
 		{
-			GotoRoom(Plaine12, 10, y)
-		}
-	}
-	
-	if room == Plaine12
-	{
-		if place_meeting(x, y, oPorte1)
-		{
-			GotoRoom(Plaine10, 694, y)
-		}
-		if place_meeting(x, y, oPorte2)
-		{
 			GotoRoom(Plaine11, 10, y+112)
 		}
 	}
@@ -309,7 +299,7 @@ if oMoniteurDialogue.actif == false && !global.cinema
 	{
 		if place_meeting(x, y, oPorte1)
 		{
-			GotoRoom(Plaine12, 694, y-112)
+			GotoRoom(Plaine10, 694, y-112)
 		}
 		if place_meeting(x, y, oPorte2)
 		{
@@ -361,11 +351,11 @@ if oMoniteurDialogue.actif == false && !global.cinema
 		}
 		if place_meeting(x, y, oPorte2)
 		{
-			GotoRoom(Plaine17demo, 10, y)
+			GotoRoom(Plaine17, 10, y)
 		}
 	}
 	
-	if room = Plaine17demo
+	if room = Plaine17
 	{
 		if place_meeting(x, y, oPorte1)
 		{
@@ -381,7 +371,7 @@ if oMoniteurDialogue.actif == false && !global.cinema
 	{
 		if place_meeting(x, y, oPorte1)
 		{
-			GotoRoom(Plaine17demo, 486, y - 112)
+			GotoRoom(Plaine17, 486, y - 112)
 		}
 		if place_meeting(x, y, oPorte2)
 		{
@@ -421,7 +411,15 @@ if oMoniteurDialogue.actif == false && !global.cinema
 		}
 		if place_meeting(x, y, oPorte2)
 		{
-			
+			GotoRoom(Plaine22, 10, y)
+		}
+	}
+	
+	if room = Plaine22
+	{
+		if place_meeting(x, y, oPorte1)
+		{
+			GotoRoom(Plaine21, 470, y)
 		}
 	}
 }

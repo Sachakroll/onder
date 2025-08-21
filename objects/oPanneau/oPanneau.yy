@@ -8,8 +8,8 @@
   "name":"oPanneau",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objets",
-    "path":"folders/Objets.yy",
+    "name":"Général",
+    "path":"folders/Objets/Général.yy",
   },
   "parentObjectId":null,
   "persistent":false,

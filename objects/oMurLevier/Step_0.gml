@@ -2,7 +2,7 @@ depth = oJoueur.depth + 20
 
 if global.etat.levierOcheonActif = 0
 {
-	x = 350
+	x = 336
 	y = 368
 }
 if global.etat.levierOcheonActif = 1

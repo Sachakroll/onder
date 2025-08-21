@@ -3,12 +3,29 @@ global.cinemaTimer++
 if Interaction(oDeclencheurZone)
 {
 	DialogDef(6,0,0)
-	Dialog("[Fenêtre haut]")
+	if global.etat.p18_tournibouParlE
+	{
+		if fenetre_haut_dlg = 1
+		{
+			Dialog("Il va finir par avoir un torticolis.")
+		}
+		if fenetre_haut_dlg = 0
+		{
+			Dialog("Tournibou vous regarde intensément.")
+			Dialog("Il regarde toute la pièce intensément.")
+			fenetre_haut_dlg = 1
+		}
+	}
+	else
+	{
+		Dialog("Vous regardez par la fenêtre.")
+		Dialog("Un drôle d'oiseau tourne la tête à l'intérieur.")
+	}
 }
 if Interaction(oDeclencheurZone2)
 {
 	DialogDef(6,0,0)
-	Dialog("[Fenêtre bas]")
+	Dialog("Le sous-sol est trop sombre pour qu'on puisse y \nvoir quoi que ce soit.")
 }
 
 if choix_etape = 1 && oMoniteurDialogue.actif = false && GetChoix() = 1
@@ -61,9 +78,9 @@ if Interaction(oDeclencheurZone6) && global.etat.p18_dialogOcheon = 0
 	global.etat.p18_dialogOcheon = 1
 	DialogDef(6,sOcheonTete,oOcheonHamac)
 	Dialog("Oh, tu es là, méchant gars !")
-	Dialog("Comme tu peux le voir, je prends une \npetite pause dans ce très confortable \nhamac. Eh oui, t'empêcher d'atteindre le \nchâteau est parfois épuisant.")
-	Dialog("Mais, jusqu'ici, je pense que je me suis \nplutôt bien débrouillé pour ce qui est de \nte ralentir !")
-	Dialog("Grâce à moi, le gentil diable aura tout le \ntemps qu'il lui faudra pour préparer \nle château à ton arrivée !")
+	Dialog("Comme tu peux le voir, je prends une \npetite pause dans ce très confortable \nhamac. Eh oui, t'empêcher d'atteindre \nle château est parfois épuisant.")
+	Dialog("Mais, jusqu'ici, je pense que je me suis \nplutôt bien débrouillé pour ce qui est \nde te ralentir !")
+	Dialog("Grâce à moi, le gentil diable aura tout \nle temps qu'il lui faudra pour préparer \nle château à ton arrivée !")
 	Dialog("Et sais-tu ce qui va encore plus te \nralentir que toutes mes autres \népreuves et subterfuges ?")
 	Dialog("Ma prochaine énigme ! \nJ'en suis très fier ! \nTu la découvriras juste un peu plus loin \nà l'est.")
 	Dialog("Quant à moi, il faut que j'aille préparer \nl'énigme suivante.")
